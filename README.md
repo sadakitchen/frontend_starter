@@ -1,7 +1,8 @@
-# ONEMOREDOT. webpack starter pack
+# frontend starter pack
 
 ## 概要
 
+ズボラな自分向け、コピペで寄せ集めたフロントエンドスターターキット。  
 LPつくるとき環境構築色々めんどくさいので、これ使うと楽よ。
 
 以下の知識が必要よ。
@@ -26,8 +27,11 @@ LPつくるとき環境構築色々めんどくさいので、これ使うと楽
 
 ## 参考にしたサイト
 
-コピペ元😇(2019/9/2の記事)  
+コピペ元😇(2019/9/2)  
 https://qiita.com/Lv_1/items/891fd0fdde4559cc4d97  
+
+webpack＋babel基本を抑えるのに(2019/6/22)  
+https://qiita.com/koedamon/items/3e64612d22f3473f36a4
 
 pugのextendsとかblockとかの使い所  
 (2018/10/6) https://qiita.com/soarflat/items/a80bdca813ae83bc9ebc  
