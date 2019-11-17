@@ -1,0 +1,79 @@
+@import 'base';
+
+%spreadsheet {
+  background: url(/img/sprite.png) no-repeat left top;
+  background-size: 200px auto;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+%BlockContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%BlockSize {
+  width: 50%;
+  height: 60%;
+  @include mediaQuery {
+    width: 70%;
+    height: 80%;
+  }
+}
+
+.areaA {
+  @extend %BlockContainer;
+  background-color: #b8d684;
+  &__card {
+    @extend %BlockSize;
+    background-color: #527516;
+  }
+}
+
+.areaB {
+  @extend %BlockContainer;
+  background-color: #c8b7cc;
+  &__card {
+    @extend %BlockSize;
+    background-color: #661675;
+  }
+}
+
+.icon {
+  @extend %spreadsheet;
+  width: 2rem;
+  height: 2rem;
+
+  $grid:
+          '0 0',
+          '0 -60px',
+          '0 -120px',
+          '-60px 0',
+          '-60px -60px',
+          '-60px -120px'
+;
+  @each $value in $grid {
+    $i: index($grid, $value);
+    &--#{$i} {
+      background-position: #{$value};
+    }
+  }
+}
+
+.iconB {
+  @extend %spreadsheet;
+  width: 6rem;
+  height: 4rem;
+  background-position: 0 -80px ;
+}
+
+.block{
+  &__element{
+    &__modify{
+      color: #ff0;
+    }
+  }
+}
